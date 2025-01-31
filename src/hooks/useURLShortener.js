@@ -24,7 +24,7 @@ export const useURLShortener = () => {
       
       const newShortUrl = {
         original: longUrl,
-        shortened: response.shortUrl,
+        shortened: response.short_url,
       };
 
       setShortenedUrls(prev => [newShortUrl, ...prev]);

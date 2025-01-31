@@ -9,7 +9,7 @@ const api = axios.create({
 
   const shortenUrl = async (url) => {
     try {
-      const response = await api.post('/shorten', { url });
+      const response = await api.post('/shorten', { 'url': url });
       return response.data;
     } catch (error) {
       console.error('Error shortening URL:', error);
